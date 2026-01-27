@@ -1,11 +1,16 @@
-import mtFuji from "../assets/mt-fuji-japan.png";
-
-export default function Entry() {
+export default function Entry({
+  img,
+  country,
+  title,
+  googleMapsLink,
+  dates,
+  text,
+}) {
   return (
     <>
       <article className="journal-entry">
         <div className="main-image-container">
-          <img src={mtFuji} alt="Mount Fuji Japan" className="main-image" />
+          <img src={img.src} alt={img.alt} className="main-image" />
         </div>
         <div className="info-container">
           <svg
@@ -39,17 +44,11 @@ export default function Entry() {
               />{" "}
             </g>
           </svg>
-          <span className="country">JAPAN</span>
-          <a href="https://maps.app.goo.gl/daQZ44Yz4z7K2Zx4A">
-            View on Google Maps
-          </a>
-          <h2 className="entry-title">Mount Fuji</h2>
-          <p className="trip-dates">12 Jan, 2021 - 24 Jan, 2021</p>
-          <p className="entry-text">
-            Mount Fuji is the tallest mountain in Japan, standing at 3,776
-            meters (12,380 feet). Mount Fuji is the single most popular tourist
-            site in Japan, for both Japanese and foreign tourists.
-          </p>
+          <span className="country">{country}</span>
+          <a href={googleMapsLink}>View on Google Maps</a>
+          <h2 className="entry-title">{title}</h2>
+          <p className="trip-dates">{dates}</p>
+          <p className="entry-text">{text}</p>
         </div>
       </article>
     </>
