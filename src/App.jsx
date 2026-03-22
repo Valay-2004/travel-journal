@@ -1,24 +1,15 @@
 import Header from "./components/Header";
 import Entry from "./components/Entry";
 import data from "./data";
-/**
- * Challenge:
- * - import the array of data from data.js
- * - map over the array to create an <Entry /> component
- *   for every item in the data array.
- * - display the array of Entry components in place of the current
- *   hard-coded <Entry /> instance.
- */
 
 const entryElement = data.map((entry) => {
   return (
     <Entry
-      img={entry.img}
-      title={entry.title}
-      country={entry.country}
-      googleMapsLink={entry.googleMapsLink}
-      dates={entry.dates}
-      text={entry.text}
+      // Adding key to address this issue
+      // > Each child in a list should have a unique "key" prop.
+      key={entry.id} // id was already given in the data
+      // we can also make use of index (by map) but that is generally not recommended
+      entry={entry}
     />
   );
 });

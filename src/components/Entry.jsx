@@ -1,16 +1,9 @@
-export default function Entry({
-  img,
-  country,
-  title,
-  googleMapsLink,
-  dates,
-  text,
-}) {
+export default function Entry({ entry }) {
   return (
     <>
       <article className="journal-entry">
         <div className="main-image-container">
-          <img src={img.src} alt={img.alt} className="main-image" />
+          <img src={entry.img.src} alt={entry.img.alt} className="main-image" />
         </div>
         <div className="info-container">
           <svg
@@ -44,11 +37,11 @@ export default function Entry({
               />{" "}
             </g>
           </svg>
-          <span className="country">{country}</span>
-          <a href={googleMapsLink}>View on Google Maps</a>
-          <h2 className="entry-title">{title}</h2>
-          <p className="trip-dates">{dates}</p>
-          <p className="entry-text">{text}</p>
+          <span className="country">{entry.country}</span>
+          <a href={entry.googleMapsLink}>View on Google Maps</a>
+          <h2 className="entry-title">{entry.title}</h2>
+          <p className="trip-dates">{entry.dates}</p>
+          <p className="entry-text">{entry.text}</p>
         </div>
       </article>
     </>
