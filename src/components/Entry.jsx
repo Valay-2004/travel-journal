@@ -21,17 +21,17 @@ export default function Entry({
             height="12"
             width="12"
             xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="796 796 200 200"
-            enable-background="new 796 796 200 200"
-            xml:space="preserve"
+            enableBackground="new 796 796 200 200"
+            xmlSpace="preserve"
             stroke="#ff0000"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               {" "}
