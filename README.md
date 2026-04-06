@@ -1,16 +1,80 @@
-# React + Vite
+# Travel Journal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based travel journal application that showcases travel experiences with beautiful location cards. Built with React + Vite for a fast, modern development experience.
 
-Currently, two official plugins are available:
+## 📋 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Display travel entries with location information
+- Images of iconic landmarks
+- Location details including dates visited
+- Google Maps integration links
+- Responsive, clean UI design
+- Fast performance with Vite
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** - UI library for building interactive components
+- **Vite** - Next generation frontend build tool
+- **CSS** - Styling and responsive design
+- **JavaScript (ES6+)** - Application logic
 
-## Expanding the ESLint configuration
+## 📦 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/
+│   ├── Header.jsx      - Header component
+│   └── Entry.jsx       - Individual travel entry component
+├── App.jsx             - Main application component
+├── data.js             - Sample travel data
+├── index.css           - Global styles
+└── main.jsx            - Entry point
+```
+
+## 🚀 Getting Started
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Development Server
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## 📝 Data Structure
+
+Each travel entry contains:
+
+- `id` - Unique identifier
+- `img` - Image object with src and alt text
+- `title` - Location name
+- `country` - Country of the location
+- `dates` - Travel dates
+- `text` - Description of the location
+- `googleMapsLink` - Link to Google Maps
+
+## 🔗 Related Projects
+
+This project is part of a series of React learning projects from Scrimba, exploring component composition, data handling, and styling in React applications.
+
+## 📄 License
+
+This project is open source and available for educational purposes.
